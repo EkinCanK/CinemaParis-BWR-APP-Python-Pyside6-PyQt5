@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mw_Main</class>
+ <widget class="QMainWindow" name="mw_Main">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>921</width>
+    <height>805</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>921</width>
+    <height>805</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CP Application Main Page</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../icons/Icons.qrc">
+    <normaloff>:/Main/CP.png</normaloff>:/Main/CP.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(153, 193, 241)</string>
+   </property>
+   <widget class="QLabel" name="lb_Logo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Main/CP.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>240</y>
+      <width>361</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A new horizon in the world of a film projectionist...</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tw_tableWidgetToDo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>861</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color :rgb(255, 255, 255)</string>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>To Do List</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Due Date</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pb_Load">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(153, 193, 241);
+selection-color: yellow;
+selection-background-color: red;
+border: 2px solid red;
+border-radius: 8px;
+font-size: 11pt</string>
+    </property>
+    <property name="text">
+     <string>Load To Do List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_clearTable">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>460</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(153, 193, 241);
+selection-color: yellow;
+selection-background-color: red;
+border: 2px solid red;
+border-radius: 8px;
+font-size: 11pt</string>
+    </property>
+    <property name="text">
+     <string>Clear To Do List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_GoToYorck">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 12pt</string>
+    </property>
+    <property name="text">
+     <string>Go to yorck.com</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_KDMConrtolSystem">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>80</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 12pt</string>
+    </property>
+    <property name="text">
+     <string>KDM Control System</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_AddDCP">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 12pt</string>
+    </property>
+    <property name="text">
+     <string>Add a DCP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_DailyTaskCalenderMS">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>150</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 11pt</string>
+    </property>
+    <property name="text">
+     <string>Daily Task Calendar Management System</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_AddTrailer">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>10</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 12pt</string>
+    </property>
+    <property name="text">
+     <string>Add a Trailer</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>20</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tw_tableWidgetToDo_KDM">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>861</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color :rgb(255, 255, 255)</string>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Feature</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>KDM required?</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>KDM Ingested?</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ingestion Date/Time</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Valid from...</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Valid to...</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ingested by </string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pb_Load_KDM">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>680</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(153, 193, 241);
+selection-color: yellow;
+selection-background-color: red;
+border: 2px solid red;
+border-radius: 8px;
+font-size: 11pt</string>
+    </property>
+    <property name="text">
+     <string>Load KDM Table List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_clearTable_KDM">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>680</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(153, 193, 241);
+selection-color: yellow;
+selection-background-color: red;
+border: 2px solid red;
+border-radius: 8px;
+font-size: 11pt</string>
+    </property>
+    <property name="text">
+     <string>Clear KDM Table</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_anleitungen">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>150</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(246, 245, 244);
+background-color: rgb(224, 27, 36);
+selection-color: yellow;
+selection-background-color: blue;
+border: 6px solid blue;
+border-radius: 8px;
+font-size: 12pt</string>
+    </property>
+    <property name="text">
+     <string>BWR Anleitungen</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>921</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuPerson">
+    <property name="title">
+     <string>Person</string>
+    </property>
+    <addaction name="action_Add_Person"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPerson"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset resource="../../../icons/Icons.qrc">
+     <normaloff>:/Buttons/cross.png</normaloff>:/Buttons/cross.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="action_Add_Person">
+   <property name="text">
+    <string>Add Person</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../icons/Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
